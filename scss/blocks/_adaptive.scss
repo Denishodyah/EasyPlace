@@ -1,0 +1,78 @@
+//mobile
+@media (max-width: 600px) {
+    .header-block {
+        flex-direction: column;
+    }
+    .hero-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefist { 
+        grid-template-areas:
+        "a d" 
+        "g g"
+        "g g"
+        "b e" 
+        "c f" 
+        "i h";
+
+    }
+    .hero-bottom::after {
+        left: 0;
+    }
+    .benefist__item7--big {
+        padding: 50px;
+    }
+.service__list {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
+.service__item:nth-child(even) {
+    grid-row:  span 1;
+}
+.contacts::after {
+    top: 600px;
+    left: 95px;
+}
+.card::after {
+    top: 90px;
+    right: 180px;
+}
+.form-btn {
+    width: 100px;
+}
+.reviews-list {
+    grid-template-columns: repeat(2, 1fr);
+}
+.footer-info {
+    gap: 30px;
+}
+}
+
+@media (max-width: 500px) {
+    .benefist {
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-areas:
+        "a"
+        "d" 
+        "g" 
+        "g"
+        "g" 
+        "g"
+        "b"
+        "e" 
+        "c"
+        "f" 
+        "i" 
+        "h";
+
+    }
+    .service__list {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10px;
+    }
+    .reviews-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

@@ -1,0 +1,70 @@
+.header {
+    padding-top: 30px;
+    margin-bottom: 25px;
+}
+.header-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.header-logo {
+    flex-shrink: 0;
+}
+.header-logo__img {
+    display: inline-block;
+    width: 123px;
+    height: 18px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 10px;
+}
+
+.nav__item-link {
+    display: inline-flex;
+    height: 30px;
+    align-items: center;
+    position: relative;
+&::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(248, 0, 216);
+    transition: width 0.15s;
+    border-radius: 50%;
+    transform: rotate(40deg);
+    
+}
+&:hover {
+    &::before {
+        width: 5px;
+        height: 5px;
+        transition: width 0.15s;
+    }
+}
+
+}
+.is-current {
+    &::before {
+        width: 5px;
+        height: 5px;
+        transition: width 0.15s;
+    }
+
+}
+
+.header-tel {
+    border-bottom:  1px solid rgb(142, 142, 142);
+}
+.header-tel__number {
+    font-size: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);//20px
+    background: linear-gradient(90.00deg, rgb(248, 0, 216),rgb(45, 27, 210));
+-webkit-text-fill-color:transparent;
+background-clip:text;
+transition: all 0.5s;
+}

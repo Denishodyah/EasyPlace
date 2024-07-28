@@ -1,0 +1,114 @@
+.hero-bottom {
+    position: relative;
+    margin-bottom: 50px;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 130px;
+        left: 430px;
+        z-index: -1;
+background-image: url("./../image/ellips.svg");
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 550px;
+width: 550px;
+
+    }
+}
+
+.hero-bottom__title {
+font-size: clamp(0.563rem, 0.402rem + 0.8vw, 1.125rem);//https://min-max-calculator.9elements.com/ для оптимизации текста по размеру экрана
+font-weight: 600;
+margin-bottom: 15px;
+text-align: center;
+}
+.hero-bottom__subtitle {
+max-width: 992px;
+font-weight: 400;
+margin: auto;
+margin-bottom: 40px;
+}
+.benefist {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+grid-template-areas:"a d g g"
+                    "b e g g"
+                    "c f i h";
+}
+.benefist__item1 {
+    grid-area: a;
+}
+.benefist__item2 {
+    grid-area: b;
+}
+.benefist__item3 {
+    grid-area: c;
+}
+.benefist__item4 {
+    grid-area: d;
+}
+.benefist__item5 {
+    grid-area: e;
+}
+.benefist__item6 {
+    grid-area: f;
+}
+.benefist__item7 {
+    grid-area: g;
+}
+.benefist__item8 {
+    grid-area: i;
+}
+.benefist__item9 {
+    grid-area: h;
+}
+.benefist__item {
+    background-color: rgb(52, 52, 52);
+    border-radius: $border-radius;
+    max-width: 300px;
+    text-align: center;
+    padding: 29px;
+}
+.benefist__item7--big {
+    padding-top: 93px;
+    padding-left: 30px;
+ 
+} 
+.benefist__name--big {
+font-size: clamp(1.063rem, 0.741rem + 1.61vw, 2.188rem);//35px
+font-weight: 700;
+}
+.benefist__description--big {
+    max-width: 418px;
+font-size:clamp(0.563rem, 0.402rem + 0.8vw, 1.125rem);//18px
+font-weight: 400;
+margin-bottom: 24px;
+}
+
+.benefist__name {
+    font-weight: 700;
+    font-size:clamp(1.25rem, 0.893rem + 1.79vw, 2.5rem);//40px
+    margin-bottom: 10px;
+}
+.small-name {
+    font-size: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);//20px
+}
+.benefist__description {
+font-size: 12px;
+font-weight: 400;
+}
+.benefist__item--samll {
+    max-width: 395px;
+} 
+.benefist__btn {
+    color: inherit;
+font-size: 18px;
+font-weight: 400;
+padding-block: 10px;
+transition: all 0.5s;
+&:hover {
+    background: rgb(83, 29, 171)        
+
+}
+}

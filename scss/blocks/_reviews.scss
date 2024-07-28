@@ -1,0 +1,37 @@
+.reviews {
+    padding-bottom: 57px;
+    max-width: 1230px;
+    margin: auto;
+}
+
+.reviews__title {
+    text-align: center;
+
+font-size: 18px;
+font-weight: 600;
+margin-bottom: 30px;
+}
+.reviews-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.reviews__item {
+    padding: 20px;
+border: 1px solid rgb(106, 106, 106);
+border-radius: 20px;
+background: rgb(52, 52, 52);
+}
+.reviews__img--stars {
+    margin-bottom: 11px;
+}
+.customer-reviews {
+    display: flex;
+    column-gap: 8px;
+}
+
+.customer-reviews__secription {
+    max-width: 227px;
+font-size: 12px;
+font-weight: 400;
+}

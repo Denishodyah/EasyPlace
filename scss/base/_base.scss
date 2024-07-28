@@ -1,0 +1,37 @@
+// * {
+//     outline: 5px solid green !important; 
+// }
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container-service {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+body {
+    font-size: $font-size-main; //16px  https://min-max-calculator.9elements.com/ для оптимизации текста по размеру экрана
+    font-family: $font-main;//Montserrat-Regular
+    color: $color-text;//white
+    line-height: 1.2; 
+    background-color: $bg-main;//black
+    letter-spacing: normal;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
